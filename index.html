@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HUMANS</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0D332C;min-height:100vh;font-family:'Montserrat',sans-serif;display:flex;align-items:center;justify-content:center;overflow-x:hidden;position:relative}
+.blob{position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+.b1{width:500px;height:400px;background:rgba(10,100,80,0.7);top:-100px;right:-100px}
+.b2{width:400px;height:350px;background:rgba(5,50,40,0.8);bottom:-80px;left:-80px}
+.b3{width:300px;height:250px;background:rgba(230,237,37,0.08);top:40%;left:50%;transform:translateX(-50%)}
+.ring{position:fixed;border-radius:50%;border:16px solid rgba(230,237,37,0.12);filter:blur(8px);pointer-events:none;z-index:0}
+.r1{width:400px;height:400px;bottom:5%;right:-80px}
+.r2{width:250px;height:250px;top:10%;left:-60px;border-color:rgba(255,253,238,0.06)}
+.container{position:relative;z-index:1;width:100%;max-width:480px;padding:48px 24px 60px;display:flex;flex-direction:column;align-items:center}
+.logo{font-family:'Archivo Black',sans-serif;font-size:42px;color:#E6ED25;letter-spacing:-1px;margin-bottom:12px;animation:fu .6s ease forwards}
+.tagline{font-size:13px;color:rgba(255,253,238,0.6);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;animation:fu .6s ease .1s both}
+.location{font-size:13px;color:rgba(255,253,238,0.45);margin-bottom:36px;animation:fu .6s ease .15s both}
+.links{width:100%;display:flex;flex-direction:column;gap:12px}
+.btn{display:flex;align-items:center;gap:14px;width:100%;padding:18px 22px;border-radius:14px;text-decoration:none;font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;transition:transform .18s,box-shadow .18s;position:relative;overflow:hidden}
+.btn::after{content:'→';position:absolute;right:22px;font-size:18px;opacity:.6;transition:transform .18s,opacity .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover::after{transform:translateX(4px);opacity:1}
+.btn:active{transform:scale(.98)}
+.icon{font-size:20px;flex-shrink:0}
+.p{background:#E6ED25;color:#0D332C;animation:fu .6s ease .25s both}
+.p:hover{background:#d4d820}
+.s{background:transparent;color:#FFFDEE;border:1.5px solid rgba(255,253,238,.25);animation:fu .6s ease .35s both}
+.s:hover{background:rgba(255,253,238,.06);border-color:rgba(255,253,238,.5)}
+.t{background:rgba(10,100,80,.4);color:#FFFDEE;border:1.5px solid rgba(10,100,80,.6);animation:fu .6s ease .45s both}
+.t:hover{background:rgba(10,100,80,.65)}
+.divider{width:40px;height:1.5px;background:rgba(255,253,238,.12);margin:28px auto 20px;animation:fu .6s ease .5s both}
+.slogan{text-align:center;animation:fu .6s ease .55s both}
+.slogan p{font-family:'Archivo Black',sans-serif;font-size:15px;color:rgba(255,253,238,.35);line-height:1.6}
+.slogan span{color:#E6ED25;opacity:.7}
+.handle{margin-top:28px;font-size:12px;color:rgba(255,253,238,.3);letter-spacing:.05em;animation:fu .6s ease .65s both}
+@keyframes fu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+<div class="ring r1"></div>
+<div class="ring r2"></div>
+<div class="container">
+  <div class="logo">HUMANs</div>
+  <p class="tagline">Arquitectura · liderazgo · personas</p>
+  <p class="location">🇵🇦 Desde Panamá, para LATAM</p>
+  <div class="links">
+    <a href="https://docs.google.com/forms/d/1ebmhJxJTnWidI_2lxZ8DT5A3Q6qp6AxaG_R16S3ftkQ" class="btn p" target="_blank"><span class="icon">📐</span>Agenda tu mentoría</a>
+    <a href="https://instagram.com/humans_arch" class="btn s" target="_blank"><span class="icon">✉️</span>Escríbeme por DM</a>
+    <a href="https://www.instagram.com/p/DILh3vVOYNw/" class="btn t" target="_blank"><span class="icon">🌿</span>¿Qué es HUMANS?</a>
+  </div>
+  <div class="divider"></div>
+  <div class="slogan"><p>Built by humans.<br><span>Built for HUMANs</span></p></div>
+  <p class="handle">@humans_arch</p>
+</div>
+</body>
+</html>
